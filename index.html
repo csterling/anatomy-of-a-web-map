@@ -109,6 +109,7 @@ window.onload = function() {
 <div><img src="images/mapsdotstamen.png"><a href="http://maps.stamen.com">maps.stamen.com</a></div>
 <div><img src="images/iphone_maps.jpg">Making maps for <em>mobile devices</em> can be similar, but we're not talking about that today.</div> 
 <div><img src="images/google-earth.png">We're also not talking about <em>digital globes</em> like <a href="http://www.google.com/earth/">Google Earth</a></div>
+<div><img src="images/static map.png">Nor are we talking about static maps, which are standalone images</div>
 <div><em>ok ok</em></div>
 <div>but how about a little history:<br><em>How did web maps come to be?</em></div>
 <div style="color: black"><img src="images/3-map-history/1-arcGIS.jpg">First, there were digital maps like <a href="http://www.esri.com/software/arcgis">ArcGIS</a>.</div>
@@ -128,6 +129,7 @@ window.onload = function() {
 <div><img src="images/tiles-loading.gif">All these little tiles load <em>way faster</em> than one big map.</div>
 <div>Web maps like this load the tiles that are on your screen. If the map is “smart,” it will pre-load tiles outside of the screen, along the top, bottom, left, and right.</div>
 <div><img src="images/slippy-map.gif">This kind of map is colloquially called a <em>slippy map</em></div>
+<div>(although nobody really uses the term <em>slippy map</em> anymore)</div>
 <div>Each <em>zoom level</em> has its own set of tiles!</div>
 <div><img src="images/tiles/zoom0.png"><em>Zoom level 0: one tile for the world.</em></div>
 <div>With each additional zoom level, the number of tiles increases exponentially.</div>
@@ -143,7 +145,7 @@ window.onload = function() {
 <div>http://tile.openstreetmap.org/4/<em>2/6</em>.png -- This is the x/y value, or the place in the grid where the tile lives.</div>
 <div>Google maps use <em>Mercator projection</em>, which is designed for sailors BUT it works well for flat maps.</div>
 <div><a href="http://commons.wikimedia.org/wiki/File:1855_Colton_Map_of_the_World_on_Mercator_Projection_-_Geographicus_-_WorldMercator-colton-1855.jpg"><img src="images/mercator.jpg"></a></div>
-<div>Anyway, so all other slippy maps and slippy map software followed Google's lead, with tiles at the base.</div>
+<div>Anyway, so all other web maps and web map software followed Google's lead, with tiles at the base.</div>
 <div>Not surprisingly, a collection of <em>raster</em> tiles makes up what we call the map's <em>base layer.</em></div>
 <div>When we layer things like markers on top of them, we call those <em>data layers</em> or <em>content layers</em> or <em>feature layers</em>.</div>
   <div>*(Not every web map contains a feature layer, but they are fairly typical.)</div>
@@ -174,7 +176,7 @@ window.onload = function() {
 <div style="color: black"><img src="images/utfgrid.png">UTFGrid is an invisble tile layer made up of arbitrary letters which are indexes into the clickable data</div>
 <div style="color: black"><img src="images/parks-conservancy.png">Stamen used this technique on the <a href="http://www.parksconservancy.org/map/#/?coords=15:37.8016:-122.4659&date=1394668684907">Parks Conservancy map.</a></div>
 <div>Exception #3: <a href="http://d3js.org">D3</a> exists outside the world of tiles</div>
-<div>you can’t easily make a road map in D3 <em>BUT</em> can do things that are clumsy in slippy maps like...</div>
+<div>you can’t easily make a road map in D3 <em>BUT</em> can do things that are clumsy in web maps like...</div>
 <div style="color: black"><img src="images/d3-examples/d3_choropleth.png">choropleth maps or... <a href="http://sta.mn/jyx">sta.mn/jyx</a></div>
 <div style="color: black"><img src="images/d3-examples/d3_cartogram.png">cartograms or... <a href="http://sta.mn/q99">sta.mn/q99</a></div>
 <div style="color: black"><img src="images/d3-examples/projection_transitions2.png">different map projections (in the browser!) <a href="http://sta.mn/jfs">sta.mn/jfs</a></div>
@@ -199,10 +201,8 @@ window.onload = function() {
 <div><img src="images/random/lurn_moar.jpg">Learn More:<br><a href="http://maptime.io/lessons-resources/">http://maptime.io/lessons-resources/</a></div>
 
 <div>Thanks to:</div>
-<div><em>CartoDB</em> for the pizza!</div>
 <div>Beth, Alan, and Lyzi</a></div>
-<div><a href="http://stamen.com">Stamen</a></div>
-<div>Everyone at <a href="http://maptime.github.io">#maptime</a></div>
+<div>Evan & Pasadena City College</div>
 <div>You!</div>
 <div>Presentation made with <a href="http://www.macwright.org/big/">big</a></div>
 <div>Now, let's make a web map!</div>
